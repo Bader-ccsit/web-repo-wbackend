@@ -1,0 +1,196 @@
+
+        #top{
+            border:white solid 2px;
+            height: 120px;
+            color: white;
+            font-family: monospace;
+
+
+            background-image: url('SignupAssets/train.gif');
+            
+            background-size: cover;
+            background-position-y: -590px;
+        
+        }
+
+        #top h6{
+            color:white;
+        }
+
+        #top h6:hover{
+            color:rgb(55, 55, 245);
+        }
+
+        
+        body{
+            
+            overflow-x: hidden;
+            
+            background-color: rgb(99, 142, 163);
+        }
+        #logo{
+            height: 40px;
+            width: 40px;
+        }
+        .underheader{
+            font-size:smaller;
+            margin:0px;
+            padding:0px;
+            transform: translate(5%,0%);
+            
+        }
+        #header{
+            
+            font-size: xx-large;
+            
+
+        }
+
+        .navicons{
+            font-size: medium;
+            font-family: monospace;
+            border:solid white 1px;
+            padding: 4px;
+            display: inline-block;
+
+        }
+        #sup{
+            background-color: white;
+
+        }
+
+        #back{
+            border:black solid 4px;
+            margin-top: 30px; 
+            background-image: url('SignupAssets/backgroundsignup.jpg');
+            background-attachment: fixed; 
+            background-size: cover; 
+            padding-bottom: 70px;
+        }
+        .title{
+            color: white;
+            font-family:monospace;
+            border: 1px solid white;
+            border-radius: 14px;
+            text-align: center;
+            width: 300px;
+            height:100px;
+            
+            margin-top: 30px;
+            
+        }
+        h4{
+            margin-bottom: 7px; 
+            font-size: x-large;
+            
+            
+        }
+        
+        
+        .labels{
+            font-size: x-large;
+            
+        }
+        .inputs{
+            background-color: transparent;
+            color: white;
+            font-family:monospace;
+            height:20px;
+            width:200px;
+            text-align: center;
+        }
+        .radio{
+            height:15px;
+            width:30px;
+            
+        }
+        #foot{
+            
+            position: relative;
+           
+            top: 150px;
+            height: 30px;
+            margin-bottom: 4px;
+            color: white;
+            font-family: monospace;
+        }
+        
+
+        #submit{
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .titledown{
+                text-align: center;
+                font-family: monospace;
+                color: white;
+                font-size:40px;
+                
+                
+        }
+
+        a >p:hover{
+            color:red;
+        }
+
+        input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        
+        border: solid white 2px;
+        text-align: center;
+        }
+
+
+
+/* Style the container for inputs */
+.title {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  border:solid 2px rgb(79, 79, 255); 
+  color: #000;
+  margin-left:0px;
+  width:170px;
+  
+  
+}
+
+#message p {
+  margin-left: 10px;
+  font-size: 8px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -10px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -10px;
+  content: "✖";
+}
+        

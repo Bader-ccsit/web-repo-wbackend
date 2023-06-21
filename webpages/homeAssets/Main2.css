@@ -1,0 +1,115 @@
+.title{
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size:40px;
+    
+    
+}
+table{
+    border: solid white 2px;
+    text-align: center;
+    
+}
+
+td{
+    text-align: center;
+    padding-right: 100px;
+    
+    
+    
+}
+.icons{
+height: 20px;
+width: 20px;
+
+}
+
+.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+.bottom{
+position: fixed;
+bottom: 0;
+}
+
+
+#header{
+background-color:rgba(228, 225, 248, 0.233);
+border: white dashed 1px;
+font-style: italic;
+}
+
+body{
+background-color: rgba(40, 86, 133, 0.799);
+overflow-x: hidden;
+/*background-image: url("homeAssets/background.jpg");
+background-size: cover;/*
+
+
+/*background-attachment: fixed;*/
+
+}
+
+
+
+#wall{
+background-image: url("photos/background.jpg");
+background-size: cover;
+background-attachment: fixed;
+height: 1000px;
+border: solid white 2px;
+}
+#wframe{
+text-align: center;
+color:white;
+font-size: small;
+}
+
+.locations{
+display:inline-block;
+height:190px;
+width:130px;
+border:solid black 1px;
+
+
+}
+
+.locborder{
+height:230px;
+width:150px;
+border:solid black 2px;
+text-align: center;
+padding-top: 10px;
+display:inline-block;
+margin-right: 40px;
+}
+
+#learn{
+border:black solid 3px;
+background: url('photos/learn.jpg') no-repeat center fixed;
+background-size: cover;
+height: 350px;
+
+text-align: center;
+
+}
+
+.learnbutton{
+
+padding:15px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+a >p:hover{
+color:red;
+}
+
+#user_info{
+    color: rgba(40, 86, 133, 0.799);
+    border-bottom-left-radius:12px ;
+    background-color: rgb(208, 208, 245);
+}

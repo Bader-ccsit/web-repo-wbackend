@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London</title>
+    <link rel="icon" href="webpages/homeAssets/photos/LOGO1.jpg" type="image/icon type">
+    <link rel="stylesheet" href="webpages\Search\hotels.css">
+
+
+    <style>
+       
+
+    #maindev{
+            border: black solid 1px;
+           padding-bottom: 0px;
+           background-image: url("webpages/Search/SearchAssets/hotels/navbar.jpg");
+           background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+        <div id="maindev">
+            
+            <div style="display: inline-block;">
+             <a href="index.php"><img src="webpages/homeAssets/photos/LOGO1.jpg" alt="home logo" style="height:30px; width:30px; "></a>
+            </div>
+ 
+             <div style="height: 90px;">
+             
+                 <h1 style="text-align: center; margin-top:0px; margin-bottom: 12px; ">Find What Ever Your Heart Desieres</h1>
+                 <p style="text-align: center; font-size:small; margin-top:0px; margin-bottom: 0px; ">Here you can find all of our beautiful hotels accross the globe:</p>
+ 
+                     <nav style="display: flex; justify-content: flex-end;">
+                         <a href="index.php"><h6>Home</h6></a>
+                         <a href="signup.php"><h6>Join Us Today!</h6></a>
+                         <a href="kitchen.html"><h6>Check out our Resturant!</h6></a>
+                         <a href="exchange.html"><h6>Money Exchenger!</h6></a>
+                
+                     </nav>
+            </div>
+ 
+            
+         </div>
+    
+        
+        
+        
+            
+        <div id="wrapper">
+                <h1>London Hotel</h1>
+            <div id="middle" style="background-image: url('webpages/Search/london/back.jpg'); background-size: cover; background-position-y: center;">
+                <div class="swipe">
+                    <section class="container">
+                        <div class="cards">
+                            <div class="images">
+                                <img src="webpages/Search/london/exterior.jpg" alt="London hotel">
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="cards">
+                            <div class="images">
+                                <img src="webpages/Search/london/interior.jpg" alt="London hotel">
+                            </div>
+                            
+                        </div>
+                
+                        <div class="cards">
+                            <div class="images">
+                                <img src="webpages/Search/london/rooms.jpg" alt="London hotel">
+                            </div>
+                            
+                        </div>
+                
+                        <div class="cards">
+                            <div class="images">
+                                <iframe src="https://www.youtube.com/embed/7Ksv9Cdvmw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+        
+            <div id="info" style="padding-left: 20px;">
+                <div id="desc">
+                    <h3><u>why Mandarin Oriental?</u></h3> 
+                    <p>The hotel with 4 beds is a cozy and comfortable option for travelers who are looking for a simple yet practical accommodation. It features four single beds, making it perfect for a group of friends or a small family. The hotel ensures that guests have a comfortable and enjoyable stay by providing essential amenities such as air conditioning, free Wi-Fi, and a private bathroom.<br><br>
+     
+                     In contrast, the 5-star hotel in Maldives exudes luxury and sophistication, offering guests a premium experience. Its beautiful swimming pool oozes relaxation and tranquility, giving guests an opportunity to unwind and soak up the sun. The hotel's gym is well-equipped with the latest fitness equipment, ensuring guests can stay on top of their fitness routines, even while on vacation.<br><br>
+                     
+                     The hotel's guest rooms are spacious and elegantly decorated, boasting top-notch amenities and facilities, including a large flat-screen TV, plush bedding, and a modern private bathroom. Overall, the hotel is a perfect destination for travelers who crave a luxurious vacation in London.<br><br><hr></p>
+                     
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6041131197157!2d-0.15780511573695544!3d51.50213197963428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760539981c821b%3A0x23f97212261f86dc!2sMandarin%20Oriental%20Hyde%20Park%2C%20London!5e0!3m2!1sar!2ssa!4v1684367022632!5m2!1sar!2ssa" width="500" height="310" style="float: right; margin-right: 10px; border:black 3px solid;"></iframe>
+                 </div>
+                 
+                
+                 <div id="pricing">
+                     <h3><u>The Price for one room, and one night is: <b style="color:red">199$</b></u></h3>
+                     <p style="display: inline-block;">choose how many people you want to book for? 
+                         
+                         
+                         <form style="display:inline-block;"> 
+                             
+                             <input type="number" name="people" id="people" min="1" required> and how many days you are willing to stay? 
+                             <input type="number" name="days" id="days" min="1" required> 
+                             
+                             <input type="button" value="Calculate" onclick="calcSum()" style="width:auto;">
+                             
+                         </form> 
+                           
+                     </p>
+                     
+                     
+                 </div>
+                 <div id="result">
+                  For one night: <p id="output1" class="outputs"></p> 
+                  For All the nights: <p id="output2"  class="outputs"></p> 
+                  <h6 style=" text-align: center; display: inline-block; margin-top: 0px;">Check out our <a href="/money/exchange/exchange.html"><b>Money converter</b></a> to get the exact amount!</h6>
+                  <button id="buynow" onclick="location.href='checkout.html'">buynow!</button>
+
+                 </div>
+
+
+                 
+            </div>
+            
+            
+        </div>
+
+        
+        
+    <script>
+        function calcSum(){
+        let days = document.getElementById("days").value;
+        let people = document.getElementById("people").value;
+        
+        //window.alert(days);
+        let price = 199;
+        people = people / 4;
+        people = Math.floor(people);
+        //window.alert(people);
+        let night = price * people;
+        let total = night * days;
+
+        document.getElementById("output1").innerHTML = night;
+        document.getElementById("output2").innerHTML = total;
+        //window.alert("for one night" + night);
+        //window.alert("for the total" + total);
+        }
+        
+        
+    </script>
+</body>
+
+
+</html>

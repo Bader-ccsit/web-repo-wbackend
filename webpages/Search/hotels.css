@@ -1,0 +1,180 @@
+.swipe{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swipe{
+    min-height: 40vh;  
+             /*was 30hv*/
+    
+    
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    left:370px;              /*change position*/
+    
+}
+.cards .images{
+    height:330px;
+    width:400px;
+    object-fit: cover;
+    padding: 6px;
+    background-color: rgba(40, 86, 133, 0.799);
+    border-radius: 12px;
+    text-align: center;
+    max-height: 300px;
+}
+
+.images img , .images iframe{
+    height:90%;
+    width:95%;
+    object-fit: cover;
+    border-radius: 20%;
+    border:5px solid white;
+    
+
+}
+
+.swipe ::-webkit-scrollbar{
+    height: 8px;
+}
+
+.swipe ::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.swipe ::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 0, 0, 0.799);
+    border-radius: 25px;
+}
+
+.swipe ::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(5, 39, 72, 0.799);
+    border-radius: 25px;
+}
+.container{
+    max-width: 600px;
+    gap: 12px;
+    width: 70%;
+    height:330px;
+    background-color:rgba(40, 86, 133, 0.799);
+    border-radius: 12px;
+    padding:5px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 70px;
+    display:flex;
+    padding-bottom: 10px;
+    
+}
+
+.container .cards{
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    padding:10px;
+}
+
+.cards h2{
+    margin-top:25px;
+    font-size: 22px;
+    color: black;
+}
+
+.cards p{
+    color: black;
+}
+.card{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+    
+}
+
+
+nav a h6{
+
+        display: inline-block;
+        border:solid black 2px;
+        border-radius: 24px;
+        margin-right: 10px;
+        margin-top: 0px;
+        padding:3px;
+        color:black;
+        }
+
+input{
+    width:40px;
+}
+
+
+#wrapper{
+    border:red 6px solid;
+    background-color: rgb(203, 213, 213);
+    margin-top:60px;
+
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+
+#result, #pricing{
+    font-family: 'Brush Script', 'Comic Sans' monospace;
+    text-align: left;
+}
+
+.outputs{
+    border:solid black 2px;
+     height:30px; 
+     width:200px; 
+     display: block; 
+     text-align: center;
+}
+
+#buynow{
+    height:30px;
+    width:90px;
+    color: blue;
+    background-color: white;
+    border:2px solid blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#buynow:hover{
+    
+    cursor: pointer;
+    background-color: grey;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+/*.swipe{
+    border:green solid 4px;
+}
+
+.container{
+    border:blue solid 4px;
+}
+
+.cards{
+    border:purple solid 4px;
+}
+
+.images{
+    border:yellow solid 4px;
+}
+*/

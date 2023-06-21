@@ -1,0 +1,101 @@
+body{
+    background-color: #e3f2fd;
+}
+#mainframe{
+    border: black solid 1px;
+        text-align: center;
+        font-family: monospace;
+        color: rgb(49, 72, 96);
+        font-size:25px;
+        
+        text-shadow: 5px 3px 4px black;
+        background-image: url("navback.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+}
+#mainlogo{
+    display: inline-block;
+    float:left;
+    width:40px;
+    height:40px;
+    
+}
+
+#navbar{
+    display: inline-block;
+    position: relative;
+    left:510px;
+    border: solid black 1px;
+    border-top: transparent;
+}
+
+#navbar h3{
+    color: purple;
+    
+}
+
+#navbar h3:hover{
+    
+    color: blue;
+}
+#mainback{
+    background-image: url("backgraound1.jpg");
+    background-size: cover;
+    align-content: center;
+    background-attachment: fixed;
+    height:700px;
+    
+    border:black solid 5px;
+}
+
+#signinheader{
+    border-bottom: black solid 2px;
+    
+}
+
+#signinlogo{
+    height:30px;
+    width:30px;
+    float: left;
+}
+
+
+#signin{
+    border: black solid 3px;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    left:535px;
+
+    height: 400px;
+    width:400px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+nav h3{
+    display:inline-block;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+label{
+    font-family: monospace;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.inputs{
+    width: 220px;
+    height: 20px;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+a >p:hover{
+    color:red;
+}

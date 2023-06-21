@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exchange your $
+        </title>
+
+        <link rel="icon" href="/homeAssets/LOGO1.jpg" type="image/icon type">
+        <link rel="stylesheet" href="webpages/homeAssets/Main.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+        
+
+        <style>
+            body{
+                background-image: url("webpages/money/exchange/exchangeAssets/stackofmoney.jpg");
+                background-size: cover;
+            }
+
+            .mainframe{
+                
+                border: black solid 2px;
+                background-color: white;
+                border-radius: 100px;
+                display: inline-block;
+                display: table;
+                margin: auto;
+                
+                
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            
+            select{
+		    font-family: fontAwesome
+	        }
+
+            .center{
+                position: relative;
+                left: 30px;
+                
+            }
+
+            .btn{
+                position: relative;
+                left: 100px;
+            }
+
+            #output1{
+                border: solid black 1px;
+                height: 30px;
+                width: 200px;
+                text-align: center;
+
+            }
+
+            .footer{
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        
+
+
+
+    <script>
+
+        function convert() {
+            const amount = document.getElementById('amount').value;
+            //window.alert(amount);
+            const from = document.getElementById('from').value;
+            //window.alert(from);
+            const to = document.getElementById('to').value;
+            //window.alert(to);
+    
+            const btn1 = document.getElementById('btn1');
+    
+            const dol = 3.75;
+            const sar = 0.27;
+            var sum = "";
+    
+            parseFloat(sum);
+                if(from == "USD" && to == "USD")
+                {
+                    window.alert("Same currancy ERROR!")
+                    window.location.reload();
+                    
+                }
+
+                if(from == "SAR" && to == "SAR")
+                {
+                    window.alert("Same currancy ERROR!")
+                    window.location.reload();
+                }
+
+                if(from == "USD"){
+                    sum = amount * dol;
+                    //window.alert(sum);
+                    document.getElementById("output1").innerHTML = sum;
+        
+                }
+    
+        
+                if(from == "SAR"){
+                    sum = amount * sar;
+                    //window.alert(sum);
+                    document.getElementById("output1").innerHTML = sum;
+                }
+
+        }
+
+                btn1.addEventListner('click', fun1);
+
+        
+    </script>
+
+
+    </head>
+
+    <body>
+        <div class="mainframe" style="padding-right: 12px; padding-left: 12px;">
+            <h1><i>Money Exchanger</i></h1>
+        </div>
+
+        <div class="mainframe" style="margin-top: 20px; border-radius: 10px; padding-right: 150px; padding-left: 150px; padding-bottom: 100px;">
+            <h3 style="text-align: center;">choose your curuncy:</h3>
+            <div id="formMod">
+                <form id="form1">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                    <br/><br/><br/><br/>
+              
+                    <label for="from">From:</label>
+                    <select id="from" name="from">
+                      <option value="USD"> &#xf155; US Dollar</option>
+                      <option value="SAR"> &#xf155; SAR</option>
+                      
+                    </select>
+              
+                    <label for="to">To:</label>
+                    <select id="to" name="to">
+                      <option value="USD"> &#xf155; US Dollar </option>
+                      <option value="SAR"> &#xf155; SAR</option>
+                      
+                    </select>
+                    <br><br><br><br>
+                    <button type="button" id="btn1" class="btn" onclick="convert()">Convert</button>
+                    <br><br><br>
+                    <p id="output1" class="center"></p>
+                    <br><br><br>
+                    <button onClick="window.location.reload();" class="btn">Reset</button>
+                  </form>
+            </div>
+
+            <div class="footer">
+            <p style="font-size: small; position: relative; left: 25px;">all rights are recerved for @Hotel</p>
+            </div>
+        </div>
+            
+    </body>
+
+    
+</html>
+
+
+

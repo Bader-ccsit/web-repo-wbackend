@@ -1,0 +1,77 @@
+
+
+#wellcome{
+    text-align: center;
+    border: white 1px dashed;
+    padding: 0%;
+    
+ 
+ }
+
+#Mainicon{
+    float: left;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.icons{
+    height: 20px;
+    width: 20px;
+   
+  }
+
+  
+
+
+iframe{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#trailer{
+    text-align: center;
+}
+
+.dropbtn {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border-radius: 12px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #eceeed44;}
+

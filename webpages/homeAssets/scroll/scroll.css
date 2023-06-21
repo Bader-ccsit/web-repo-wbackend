@@ -1,0 +1,94 @@
+.swipe{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swipe{
+    min-height: 30vh; 
+             /*was 100hv*/
+    min-width:;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    left:500px;
+}
+.cards .images{
+    height:150px;
+    width:150px;
+    object-fit: cover;
+    padding: 6px;
+    background-color: rgba(40, 86, 133, 0.799);
+    border-radius: 12px;
+    
+}
+
+.images img{
+    height:90%;
+    width:90%;
+    object-fit: cover;
+    border-radius: 20%;
+    border:5px solid white;
+    
+}
+
+.swipe ::-webkit-scrollbar{
+    height: 8px;
+}
+
+.swipe ::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.swipe ::-webkit-scrollbar-thumb{
+    background-color: rgba(40, 86, 133, 0.799);
+    border-radius: 25px;
+}
+
+.swipe ::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(5, 39, 72, 0.799);
+    border-radius: 25px;
+}
+.container{
+    max-width: 400px;
+    gap: 12px;
+    width: 40%;
+    background-color:rgba(40, 86, 133, 0.799);
+    border-radius: 12px;
+    padding:20px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 20px;
+    display:flex;
+}
+
+.container .cards{
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    padding:30px;
+}
+
+.cards h2{
+    margin-top:25px;
+    font-size: 22px;
+    color: black;
+}
+
+.cards p{
+    color: black;
+}
+.card{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+    
+}
